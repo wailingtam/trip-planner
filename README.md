@@ -1,9 +1,6 @@
-ECSDILab
-========
+Trip planner
+============
+A platform of services/agents that organizes a trip to a certain city.
+The planification includes flights, hotel and activities and it takes into account the user's preferences eg. price limit, hotel star rating and type of activity.
 
-Ejemplos de programas para el laboratorio de ECSDI:
-
-* Uso de Flask
-* Uso de la libreria Multiprocessing
-* Uso de rdflib
-* Uso de SPARQLWrapper
+Use of Flask, the Multiprocessing library, rdflib, SPARQLWrapper.
