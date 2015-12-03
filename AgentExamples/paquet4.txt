@@ -1,0 +1,181 @@
+{
+    "Activities": {
+        "Dia 3": {
+            "Torn nit": {
+                "Website": "http://www.xiringuitoduna.com/", 
+                "Phone": "653 20 27 57", 
+                "Rating": "", 
+                "Name": "Xiringuito Duna", 
+                "Address": "Passeig de la Platja, s/n, Platja del Prat, 08820 El Prat del Llobregat, Barcelona, Spain"
+            }, 
+            "Torn mati": {
+                "Website": "None", 
+                "Phone": "932 59 63 69", 
+                "Rating": "", 
+                "Name": "Il caff\u00e8 di Roma", 
+                "Address": "Aeropuerto El Prat - Terminal T1 Zona Aeroport, S/N, 08820 Barcelona, Spain"
+            }, 
+            "Torn tarda": {
+                "Website": "None", 
+                "Phone": "933 70 13 13", 
+                "Rating": "", 
+                "Name": "Eurest Servair S.L", 
+                "Address": "Carrer de la Conca de Barber\u00e0, 08820 Prat de Llobregat (El), Barcelona, Spain"
+            }
+        }, 
+        "Dia 2": {
+            "Torn nit": {
+                "Website": "http://www.mcdonalds.es/", 
+                "Phone": "934 99 12 47", 
+                "Rating": "", 
+                "Name": "McDonalds", 
+                "Address": "Aeropuerto Barcelona, T1. Local 38, 08820 El Prat de Llobregat, Barcelona, Spain"
+            }, 
+            "Torn mati": {
+                "Website": "http://www.lizarran.es/", 
+                "Phone": "934 99 10 90", 
+                "Rating": "", 
+                "Name": "Lizarran", 
+                "Address": "Aeropuerto de Barcelona-El Prat, La Plaza Llegadas T1, 08820 El Prat de Llobregat, Barcelona, Spain"
+            }, 
+            "Torn tarda": {
+                "Website": "http://www.gambrinus.es/", 
+                "Phone": "913 09 74 44", 
+                "Rating": "", 
+                "Name": "Gambrinus", 
+                "Address": "Aeropuerto de Barcelona-El Prat, Terminal 1, 08820 El Prat de Llobregat, Barcelona, Spain"
+            }
+        }, 
+        "Dia 1": {
+            "Torn nit": {
+                "Website": "None", 
+                "Phone": "None", 
+                "Rating": "", 
+                "Name": "Delta del Llobregat", 
+                "Address": "Catalonia, Spain"
+            }, 
+            "Torn mati": {
+                "Website": "http://www.chiringuitocalamar.com/", 
+                "Phone": "610 02 45 55", 
+                "Rating": "", 
+                "Name": "El Calamar", 
+                "Address": "la Platja, s/n, Carretera de Circumva\u0140laci\u00f3 Tram B, 08820 El Prat de Llobregat, Barcelona, Spain"
+            }, 
+            "Torn tarda": {
+                "Website": "None", 
+                "Phone": "934 71 90 11", 
+                "Rating": "", 
+                "Name": "Restaurante la Torre Bcn 2012 S.L.", 
+                "Address": "Avinguda Baix Llobregat, 08820 Prat de Llobregat (El), Barcelona, Spain"
+            }
+        }, 
+        "Dia 7": {
+            "Torn mati": {
+                "Website": "https://www.facebook.com/LaMasiaSanchezCasal?ref=hl", 
+                "Phone": "934 79 16 16", 
+                "Rating": "", 
+                "Name": "Entrada al restaurante", 
+                "Address": "Barcelona\u2013El Prat Airport, 08820 El Prat de Llobregat, Barcelona, Spain"
+            }
+        }, 
+        "Dia 6": {
+            "Torn nit": {
+                "Website": "http://www.mcdonalds.es/", 
+                "Phone": "934 99 12 36", 
+                "Rating": "", 
+                "Name": "McDonald's", 
+                "Address": "Aeropuerto Barcelona-El Prat, Terminal 1, Local 58, 08820 Barcelona, Barcelona, Spain"
+            }, 
+            "Torn mati": {
+                "Website": "None", 
+                "Phone": "None", 
+                "Rating": "", 
+                "Name": "Canudas", 
+                "Address": "08820 El Prat de Llobregat, Barcelona, Spain"
+            }, 
+            "Torn tarda": {
+                "Website": "None", 
+                "Phone": "None", 
+                "Rating": "", 
+                "Name": "Divers", 
+                "Address": "Barcelona, Spain"
+            }
+        }, 
+        "Dia 5": {
+            "Torn nit": {
+                "Website": "http://www.chocolatfactory.com/", 
+                "Phone": "932 98 38 38", 
+                "Rating": "", 
+                "Name": "Chocolat Factory", 
+                "Address": "Aeropuerto de Barcelona-El Prat, Terminal T1. Planta 1, Barcelona, Barcelona, Spain"
+            }, 
+            "Torn mati": {
+                "Website": "http://www.semon.es/", 
+                "Phone": "932 59 63 93", 
+                "Rating": "", 
+                "Name": "Semon air", 
+                "Address": "Aeropuerto de Barcelona-El Prat, Terminal 1, 08820 Barcelona, Barcelona, Spain"
+            }, 
+            "Torn tarda": {
+                "Website": "None", 
+                "Phone": "None", 
+                "Rating": "4.3", 
+                "Name": "Remolar-Filipines", 
+                "Address": "Catalonia, Spain"
+            }
+        }, 
+        "Dia 4": {
+            "Torn nit": {
+                "Website": "http://www.pansandcompany.com/", 
+                "Phone": "None", 
+                "Rating": "", 
+                "Name": "Pans and Company", 
+                "Address": "Barcelona, Spain"
+            }, 
+            "Torn mati": {
+                "Website": "http://www.pansandcompany.com/", 
+                "Phone": "932 98 37 48", 
+                "Rating": "", 
+                "Name": "Pans & Company", 
+                "Address": "Terminal 2, Aeropuerto de Barcelona-El Prat, 08820 El Prat de Llobregat, Barcelona, Spain"
+            }, 
+            "Torn tarda": {
+                "Website": "http://haagen-dazs.es/", 
+                "Phone": "932 59 64 20", 
+                "Rating": "", 
+                "Name": "H\u00e4agen-Dazs", 
+                "Address": "Aeropuerto de Barcelona-El Prat, Terminal T1 Planta 1. Salidas, Barcelona, Barcelona, Spain"
+            }
+        }
+    }, 
+    "Hotel": {
+        "Rating": "3.0", 
+        "Rate per night": "54.56USD", 
+        "Name": "La Casa de Antonio Petit Hotel", 
+        "Total rate": "433.44USD", 
+        "Distance to city center": "1.6873759KM", 
+        "Address": "Gran Via de les Corts Catalanes 584 2\u00ba1", 
+        "Description": "&lt;p&gt;&lt;b&gt;Property Location&lt;/b&gt; &lt;br /&gt;With a stay at La Casa de Antonio Petit Hotel, you&apos;ll be centrally located in Barcelona, steps from Placa Universitat and University of Barcelona.  This guesthouse"
+    }, 
+    "Transport": {
+        "Preu total": "1345.4EUR", 
+        "Return flight": {
+            "Origin": "BCN", 
+            "Flight number": "1815", 
+            "Destination": "MUC", 
+            "Carrier": "LH", 
+            "Arrival time": "2016-05-17T20:45+02:00", 
+            "Duration": "120min", 
+            "Departure time": "2016-05-17T18:45+02:00"
+        }, 
+        "Departure flight": {
+            "Origin": "MUC", 
+            "Flight number": "1812", 
+            "Destination": "BCN", 
+            "Carrier": "LH", 
+            "Arrival time": "2016-05-10T14:40+02:00", 
+            "Duration": "120min", 
+            "Departure time": "2016-05-10T12:40+02:00"
+        }
+    }
+}

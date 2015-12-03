@@ -1,0 +1,3338 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://mem0r1es.github.io/ontology/events"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://mem0r1es.github.io/ontology/events">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="db" IRI="http://dbpedia.org/ontology/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://mem0r1es.github.io/ontology/places</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Google Location Types</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Flat taxonomy of location types returned by the Google Places API.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ontology for Facebook Life Events and associated activities.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Note: all the non-Activity classes that are defined are used as crutches; they&apos;re not meant as final.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Note: All temporal classes can be replaced by OWL-Time. In most cases, a TemporalEntity:Instant can capture all the information.</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#AcquireLicence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AcquirePet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BreakBone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BuyHome"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BuyVehicle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChangeBelief"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChangeSchool"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EnrollMilitary"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GoogleActivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ImproveHome"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LearnLanguage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LoseWeight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LossOfLovedOne"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MarryPerson"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MoveHome"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NewChild"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NewFamilyMember"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OvercomeIllness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PickUpSport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PublishWork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RegisterOrganDonor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RegisterVoter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RemoveBraces"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RepairVision"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StudyAbroad"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TimeDuration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TimeOfDay"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VolunteerWork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WinAward"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#ATM"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Accounting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Airport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#AmusementPark"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Aquarium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#ArtGallery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Bakery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Bank"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Bar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#BeautySalon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#BicycleStore"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#BookStore"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#BowlingAlley"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#BusStation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Cafe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Campground"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#CarDealer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#CarRental"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#CarRepair"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#CarWash"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Casino"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Cemetery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Church"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#CityHall"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#ClothingStore"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#ConvenienceStore"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Courthouse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Dentist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#DepartmentStore"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Doctor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Electrician"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#ElectronicsStore"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Embassy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Establishment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Finance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#FireStation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Florist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Food"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#FuneralHome"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#FurnitureStore"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#GasStation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#GeneralContractor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#GroceryOrSupermarket"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Gym"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#HairCare"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#HardwareStore"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Health"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#HinduTemple"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#HomeGoodsStore"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Hospital"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#InsuranceAgency"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#JewelryStore"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Laundry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Lawyer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Library"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#LiquourStore"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#LocalGovernmentOffice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Locksmith"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Lodging"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#MealDelivery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#MealTakeaway"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Mosque"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#MovieRental"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#MovieTheater"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#MovingCompany"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Museum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#NightClub"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Painter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Park"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Parking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#PetStore"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Pharmacy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Physiotherapist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#PlaceOfWorship"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Plumber"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Police"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#PostOffice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#RVPark"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#RealEstateAgency"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Restaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#RoofingContractor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#School"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#ShoeStore"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#ShoppingMall"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Spa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Stadium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Storage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Store"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#SubwayStation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Synagogue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#TaxiStand"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#TrainStation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#TravelAgency"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#University"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#VeterinaryCare"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Zoo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasActivity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLocation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTimeDuration"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTimeOfDay"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#possibleWhile"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#0-15Minutes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#120+Minutes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#15-30Minutes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#30-60Minutes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#60-120Minutes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Afternoon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Evening"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IN_VEHICLE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Morning"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nighttime"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NoneOfTheAbove"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Noon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ON_BICYCLE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ON_FOOT"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#STILL"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TILTING"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UNKNOWN"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#GoogleActivity"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#ON_FOOT"/>
+            <NamedIndividual IRI="#IN_VEHICLE"/>
+            <NamedIndividual IRI="#TILTING"/>
+            <NamedIndividual IRI="#UNKNOWN"/>
+            <NamedIndividual IRI="#ON_BICYCLE"/>
+            <NamedIndividual IRI="#STILL"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#TimeDuration"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#NoneOfTheAbove"/>
+            <NamedIndividual IRI="#0-15Minutes"/>
+            <NamedIndividual IRI="#120+Minutes"/>
+            <NamedIndividual IRI="#60-120Minutes"/>
+            <NamedIndividual IRI="#15-30Minutes"/>
+            <NamedIndividual IRI="#30-60Minutes"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#TimeOfDay"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#Evening"/>
+            <NamedIndividual IRI="#Nighttime"/>
+            <NamedIndividual IRI="#Morning"/>
+            <NamedIndividual IRI="#Noon"/>
+            <NamedIndividual IRI="#Afternoon"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#AcquireLicence"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AcquireLicence"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#Courthouse"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AcquireLicence"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#LocalGovernmentOffice"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AcquireLicence"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTimeDuration"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#NoneOfTheAbove"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AcquireLicence"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTimeOfDay"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#Evening"/>
+                <NamedIndividual IRI="#Morning"/>
+                <NamedIndividual IRI="#Noon"/>
+                <NamedIndividual IRI="#Afternoon"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AcquirePet"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AcquirePet"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#PetStore"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AcquirePet"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#VeterinaryCare"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AcquirePet"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTimeDuration"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#30-60Minutes"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AcquirePet"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTimeOfDay"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#Morning"/>
+                <NamedIndividual IRI="#Noon"/>
+                <NamedIndividual IRI="#Afternoon"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BreakBone"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BreakBone"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#Doctor"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BreakBone"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#Hospital"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BreakBone"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#Physiotherapist"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BreakBone"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTimeDuration"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#0-15Minutes"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BreakBone"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTimeOfDay"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#Evening"/>
+                <NamedIndividual IRI="#Nighttime"/>
+                <NamedIndividual IRI="#Morning"/>
+                <NamedIndividual IRI="#Noon"/>
+                <NamedIndividual IRI="#Afternoon"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BuyHome"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BuyHome"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#Bank"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BuyHome"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#RealEstateAgency"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BuyHome"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTimeDuration"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#NoneOfTheAbove"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BuyHome"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTimeOfDay"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#Morning"/>
+                <NamedIndividual IRI="#Noon"/>
+                <NamedIndividual IRI="#Afternoon"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BuyHome"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#possibleWhile"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#ON_FOOT"/>
+                <NamedIndividual IRI="#TILTING"/>
+                <NamedIndividual IRI="#UNKNOWN"/>
+                <NamedIndividual IRI="#STILL"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BuyVehicle"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BuyVehicle"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#CarDealer"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BuyVehicle"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#CarRental"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BuyVehicle"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTimeDuration"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#30-60Minutes"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BuyVehicle"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTimeOfDay"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#Morning"/>
+                <NamedIndividual IRI="#Noon"/>
+                <NamedIndividual IRI="#Afternoon"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChangeBelief"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChangeBelief"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#Church"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChangeBelief"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#HinduTemple"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChangeBelief"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#Mosque"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChangeBelief"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#PlaceOfWorship"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChangeBelief"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#Synagogue"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChangeBelief"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTimeDuration"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#NoneOfTheAbove"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChangeBelief"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTimeOfDay"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#Evening"/>
+                <NamedIndividual IRI="#Nighttime"/>
+                <NamedIndividual IRI="#Morning"/>
+                <NamedIndividual IRI="#Noon"/>
+                <NamedIndividual IRI="#Afternoon"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChangeSchool"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChangeSchool"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#School"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChangeSchool"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#University"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChangeSchool"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTimeDuration"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#NoneOfTheAbove"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChangeSchool"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTimeOfDay"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#Morning"/>
+                <NamedIndividual IRI="#Noon"/>
+                <NamedIndividual IRI="#Afternoon"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnrollMilitary"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnrollMilitary"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#LocalGovernmentOffice"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnrollMilitary"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTimeDuration"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#NoneOfTheAbove"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnrollMilitary"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTimeOfDay"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#Morning"/>
+                <NamedIndividual IRI="#Noon"/>
+                <NamedIndividual IRI="#Afternoon"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ImproveHome"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ImproveHome"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#FurnitureStore"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ImproveHome"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#GeneralContractor"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ImproveHome"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#HardwareStore"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ImproveHome"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#HomeGoodsStore"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ImproveHome"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#Painter"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ImproveHome"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#RoofingContractor"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ImproveHome"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#Store"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ImproveHome"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTimeDuration"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#NoneOfTheAbove"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ImproveHome"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTimeOfDay"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#Evening"/>
+                <NamedIndividual IRI="#Morning"/>
+                <NamedIndividual IRI="#Noon"/>
+                <NamedIndividual IRI="#Afternoon"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ImproveHome"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#possibleWhile"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#ON_FOOT"/>
+                <NamedIndividual IRI="#TILTING"/>
+                <NamedIndividual IRI="#UNKNOWN"/>
+                <NamedIndividual IRI="#STILL"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LearnLanguage"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LearnLanguage"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#Library"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LearnLanguage"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#School"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LearnLanguage"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#University"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LearnLanguage"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTimeDuration"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#NoneOfTheAbove"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LearnLanguage"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTimeOfDay"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#Evening"/>
+                <NamedIndividual IRI="#Nighttime"/>
+                <NamedIndividual IRI="#Morning"/>
+                <NamedIndividual IRI="#Noon"/>
+                <NamedIndividual IRI="#Afternoon"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LearnLanguage"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#possibleWhile"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#ON_FOOT"/>
+                <NamedIndividual IRI="#TILTING"/>
+                <NamedIndividual IRI="#UNKNOWN"/>
+                <NamedIndividual IRI="#STILL"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LoseWeight"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LoseWeight"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#Doctor"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LoseWeight"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#Gym"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LoseWeight"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#Hospital"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LoseWeight"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTimeDuration"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#NoneOfTheAbove"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LoseWeight"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTimeOfDay"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#Evening"/>
+                <NamedIndividual IRI="#Nighttime"/>
+                <NamedIndividual IRI="#Morning"/>
+                <NamedIndividual IRI="#Noon"/>
+                <NamedIndividual IRI="#Afternoon"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LossOfLovedOne"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LossOfLovedOne"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#Cemetery"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LossOfLovedOne"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#Church"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LossOfLovedOne"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#FuneralHome"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LossOfLovedOne"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#Hospital"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LossOfLovedOne"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#PlaceOfWorship"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LossOfLovedOne"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#Synagogue"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LossOfLovedOne"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTimeDuration"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#NoneOfTheAbove"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LossOfLovedOne"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTimeOfDay"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#Evening"/>
+                <NamedIndividual IRI="#Nighttime"/>
+                <NamedIndividual IRI="#Morning"/>
+                <NamedIndividual IRI="#Noon"/>
+                <NamedIndividual IRI="#Afternoon"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MarryPerson"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MarryPerson"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#Church"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MarryPerson"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#CityHall"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MarryPerson"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#Courthouse"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MarryPerson"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#HinduTemple"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MarryPerson"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#LocalGovernmentOffice"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MarryPerson"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#Mosque"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MarryPerson"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#PlaceOfWorship"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MarryPerson"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#Synagogue"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MarryPerson"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTimeDuration"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#NoneOfTheAbove"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MarryPerson"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTimeOfDay"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#Evening"/>
+                <NamedIndividual IRI="#Morning"/>
+                <NamedIndividual IRI="#Noon"/>
+                <NamedIndividual IRI="#Afternoon"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MarryPerson"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#possibleWhile"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#ON_FOOT"/>
+                <NamedIndividual IRI="#TILTING"/>
+                <NamedIndividual IRI="#UNKNOWN"/>
+                <NamedIndividual IRI="#STILL"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MoveHome"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MoveHome"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#MovingCompany"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MoveHome"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#RVPark"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MoveHome"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#RealEstateAgency"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MoveHome"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTimeDuration"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#NoneOfTheAbove"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MoveHome"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTimeOfDay"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#Evening"/>
+                <NamedIndividual IRI="#Nighttime"/>
+                <NamedIndividual IRI="#Morning"/>
+                <NamedIndividual IRI="#Noon"/>
+                <NamedIndividual IRI="#Afternoon"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NewChild"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NewChild"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#Hospital"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NewChild"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTimeDuration"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#NoneOfTheAbove"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NewChild"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTimeOfDay"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#Evening"/>
+                <NamedIndividual IRI="#Nighttime"/>
+                <NamedIndividual IRI="#Morning"/>
+                <NamedIndividual IRI="#Noon"/>
+                <NamedIndividual IRI="#Afternoon"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NewChild"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#possibleWhile"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#ON_FOOT"/>
+                <NamedIndividual IRI="#TILTING"/>
+                <NamedIndividual IRI="#UNKNOWN"/>
+                <NamedIndividual IRI="#STILL"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NewFamilyMember"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NewFamilyMember"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#Courthouse"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NewFamilyMember"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#Hospital"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OvercomeIllness"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OvercomeIllness"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#Doctor"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OvercomeIllness"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#Health"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OvercomeIllness"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#Hospital"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OvercomeIllness"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#Pharmacy"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OvercomeIllness"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#Physiotherapist"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OvercomeIllness"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTimeDuration"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#NoneOfTheAbove"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OvercomeIllness"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTimeOfDay"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#Evening"/>
+                <NamedIndividual IRI="#Nighttime"/>
+                <NamedIndividual IRI="#Morning"/>
+                <NamedIndividual IRI="#Noon"/>
+                <NamedIndividual IRI="#Afternoon"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OvercomeIllness"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#possibleWhile"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#ON_FOOT"/>
+                <NamedIndividual IRI="#TILTING"/>
+                <NamedIndividual IRI="#UNKNOWN"/>
+                <NamedIndividual IRI="#STILL"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PickUpSport"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PickUpSport"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#BowlingAlley"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PickUpSport"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#Gym"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PickUpSport"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#Park"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PickUpSport"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#School"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PickUpSport"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#Stadium"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PickUpSport"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTimeDuration"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#NoneOfTheAbove"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PickUpSport"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTimeOfDay"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#Evening"/>
+                <NamedIndividual IRI="#Nighttime"/>
+                <NamedIndividual IRI="#Morning"/>
+                <NamedIndividual IRI="#Noon"/>
+                <NamedIndividual IRI="#Afternoon"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PublishWork"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PublishWork"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#BookStore"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PublishWork"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#School"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PublishWork"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#University"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PublishWork"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTimeDuration"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#NoneOfTheAbove"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PublishWork"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTimeOfDay"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#Morning"/>
+                <NamedIndividual IRI="#Noon"/>
+                <NamedIndividual IRI="#Afternoon"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PublishWork"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#possibleWhile"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#ON_FOOT"/>
+                <NamedIndividual IRI="#TILTING"/>
+                <NamedIndividual IRI="#UNKNOWN"/>
+                <NamedIndividual IRI="#STILL"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RegisterOrganDonor"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RegisterOrganDonor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#CityHall"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RegisterOrganDonor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#Courthouse"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RegisterOrganDonor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#Doctor"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RegisterOrganDonor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#Health"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RegisterOrganDonor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#Hospital"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RegisterOrganDonor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTimeDuration"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#30-60Minutes"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RegisterOrganDonor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTimeOfDay"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#Morning"/>
+                <NamedIndividual IRI="#Noon"/>
+                <NamedIndividual IRI="#Afternoon"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RegisterOrganDonor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#possibleWhile"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#ON_FOOT"/>
+                <NamedIndividual IRI="#TILTING"/>
+                <NamedIndividual IRI="#UNKNOWN"/>
+                <NamedIndividual IRI="#STILL"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RegisterVoter"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RegisterVoter"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#CityHall"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RegisterVoter"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#Courthouse"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RegisterVoter"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#LocalGovernmentOffice"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RegisterVoter"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#PostOffice"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RegisterVoter"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTimeDuration"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#15-30Minutes"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RegisterVoter"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTimeOfDay"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#Morning"/>
+                <NamedIndividual IRI="#Noon"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RegisterVoter"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#possibleWhile"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#ON_FOOT"/>
+                <NamedIndividual IRI="#TILTING"/>
+                <NamedIndividual IRI="#UNKNOWN"/>
+                <NamedIndividual IRI="#STILL"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RemoveBraces"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RemoveBraces"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#Dentist"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RemoveBraces"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#Hospital"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RemoveBraces"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTimeDuration"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#60-120Minutes"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RemoveBraces"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTimeOfDay"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#Morning"/>
+                <NamedIndividual IRI="#Noon"/>
+                <NamedIndividual IRI="#Afternoon"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RemoveBraces"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#possibleWhile"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#ON_FOOT"/>
+                <NamedIndividual IRI="#TILTING"/>
+                <NamedIndividual IRI="#UNKNOWN"/>
+                <NamedIndividual IRI="#STILL"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RepairVision"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RepairVision"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#Doctor"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RepairVision"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#Hospital"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RepairVision"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTimeDuration"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#60-120Minutes"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RepairVision"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTimeOfDay"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#Morning"/>
+                <NamedIndividual IRI="#Noon"/>
+                <NamedIndividual IRI="#Afternoon"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RepairVision"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#possibleWhile"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#ON_FOOT"/>
+                <NamedIndividual IRI="#TILTING"/>
+                <NamedIndividual IRI="#UNKNOWN"/>
+                <NamedIndividual IRI="#STILL"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StudyAbroad"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StudyAbroad"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#Embassy"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StudyAbroad"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#Library"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StudyAbroad"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#School"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StudyAbroad"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#TravelAgency"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StudyAbroad"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#University"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StudyAbroad"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTimeDuration"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#NoneOfTheAbove"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StudyAbroad"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTimeOfDay"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#Evening"/>
+                <NamedIndividual IRI="#Nighttime"/>
+                <NamedIndividual IRI="#Morning"/>
+                <NamedIndividual IRI="#Noon"/>
+                <NamedIndividual IRI="#Afternoon"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VolunteerWork"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VolunteerWork"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#Church"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VolunteerWork"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#HinduTemple"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VolunteerWork"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#Hospital"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VolunteerWork"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#Library"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VolunteerWork"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#LocalGovernmentOffice"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VolunteerWork"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#Museum"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VolunteerWork"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#Park"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VolunteerWork"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#PlaceOfWorship"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VolunteerWork"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#School"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VolunteerWork"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#Synagogue"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VolunteerWork"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#VeterinaryCare"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VolunteerWork"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#Zoo"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VolunteerWork"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTimeDuration"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#NoneOfTheAbove"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VolunteerWork"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTimeOfDay"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#Evening"/>
+                <NamedIndividual IRI="#Nighttime"/>
+                <NamedIndividual IRI="#Morning"/>
+                <NamedIndividual IRI="#Noon"/>
+                <NamedIndividual IRI="#Afternoon"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WinAward"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WinAward"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#BowlingAlley"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WinAward"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#CityHall"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WinAward"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#FireStation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WinAward"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#School"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WinAward"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#Stadium"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WinAward"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://mem0r1es.github.io/ontology/places#University"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WinAward"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTimeDuration"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#60-120Minutes"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WinAward"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTimeOfDay"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#Evening"/>
+                <NamedIndividual IRI="#Morning"/>
+                <NamedIndividual IRI="#Noon"/>
+                <NamedIndividual IRI="#Afternoon"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WinAward"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#possibleWhile"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#TILTING"/>
+                <NamedIndividual IRI="#UNKNOWN"/>
+                <NamedIndividual IRI="#STILL"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#ATM"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Accounting"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Airport"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#AmusementPark"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Aquarium"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#ArtGallery"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Bakery"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Bank"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Bar"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#BeautySalon"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#BicycleStore"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#BookStore"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#BowlingAlley"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#BusStation"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Cafe"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Campground"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#CarDealer"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#CarRental"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#CarRepair"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#CarWash"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Casino"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Cemetery"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Church"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#CityHall"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#ClothingStore"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#ConvenienceStore"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Courthouse"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Dentist"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#DepartmentStore"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Doctor"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Electrician"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#ElectronicsStore"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Embassy"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Establishment"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Finance"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#FireStation"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Florist"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Food"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#FuneralHome"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#FurnitureStore"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#GasStation"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#GeneralContractor"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#GroceryOrSupermarket"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Gym"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#HairCare"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#HardwareStore"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Health"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#HinduTemple"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#HomeGoodsStore"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Hospital"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#InsuranceAgency"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#JewelryStore"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Laundry"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Lawyer"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Library"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#LiquourStore"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#LocalGovernmentOffice"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Locksmith"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Lodging"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#MealDelivery"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#MealTakeaway"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Mosque"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#MovieRental"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#MovieTheater"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#MovingCompany"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Museum"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#NightClub"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Painter"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Park"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Parking"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#PetStore"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Pharmacy"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Physiotherapist"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#PlaceOfWorship"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Plumber"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Police"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#PostOffice"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#RVPark"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#RealEstateAgency"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Restaurant"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#RoofingContractor"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#School"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#ShoeStore"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#ShoppingMall"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Spa"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Stadium"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Storage"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Store"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#SubwayStation"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Synagogue"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#TaxiStand"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#TrainStation"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#TravelAgency"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#University"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#VeterinaryCare"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mem0r1es.github.io/ontology/places#Zoo"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#TimeDuration"/>
+        <NamedIndividual IRI="#0-15Minutes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TimeDuration"/>
+        <NamedIndividual IRI="#120+Minutes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TimeDuration"/>
+        <NamedIndividual IRI="#15-30Minutes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TimeDuration"/>
+        <NamedIndividual IRI="#30-60Minutes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TimeDuration"/>
+        <NamedIndividual IRI="#60-120Minutes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TimeOfDay"/>
+        <NamedIndividual IRI="#Afternoon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TimeOfDay"/>
+        <NamedIndividual IRI="#Evening"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GoogleActivity"/>
+        <NamedIndividual IRI="#IN_VEHICLE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TimeOfDay"/>
+        <NamedIndividual IRI="#Morning"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TimeOfDay"/>
+        <NamedIndividual IRI="#Nighttime"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TimeDuration"/>
+        <NamedIndividual IRI="#NoneOfTheAbove"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TimeOfDay"/>
+        <NamedIndividual IRI="#Noon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GoogleActivity"/>
+        <NamedIndividual IRI="#ON_BICYCLE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GoogleActivity"/>
+        <NamedIndividual IRI="#ON_FOOT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GoogleActivity"/>
+        <NamedIndividual IRI="#STILL"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GoogleActivity"/>
+        <NamedIndividual IRI="#TILTING"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GoogleActivity"/>
+        <NamedIndividual IRI="#UNKNOWN"/>
+    </ClassAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasLocation"/>
+        <ObjectProperty IRI="#hasActivity"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasTimeDuration"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasTimeOfDay"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasActivity"/>
+        <Class IRI="#Location"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLocation"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTimeDuration"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTimeOfDay"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#possibleWhile"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasActivity"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLocation"/>
+        <Class IRI="#Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTimeDuration"/>
+        <Class IRI="#TimeDuration"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTimeOfDay"/>
+        <Class IRI="#TimeOfDay"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#possibleWhile"/>
+        <Class IRI="#GoogleActivity"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#AcquireLicence</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">User has acquired a new driver&apos;s licence.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AcquireLicence</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">acquire licence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#AcquirePet</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">User has a new pet.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AcquirePet</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">acquire pet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#BreakBone</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">User has broken a bone, or damaged a body part.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BreakBone</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">break bone</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#BuyHome</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">User has bought a new home.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BuyHome</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Note: this overlaps with Moved.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BuyHome</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Person&apos;s home changes. This can be used to deduce the BoughtHome activity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BuyHome</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">buy home</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#BuyVehicle</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">User has acquired a new vehicle.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BuyVehicle</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Detectable if there is a lack of a vehicle beforehand.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BuyVehicle</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">buy vehicle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#ChangeBelief</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">User has changed his belief.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ChangeBelief</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">change belief</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#ChangeSchool</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">User has a new school.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ChangeSchool</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">change school</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#EnrollMilitary</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">User has gone through (or has started) military service.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#EnrollMilitary</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">enroll military</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#Event</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An event; that is, any activity in the life of a user.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Event</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#GoogleActivity</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Low-level activities that represent the possible activities returned by Google&apos;s Activity Recognition API.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#GoogleActivity</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Google Activity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#ImproveHome</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">User has improved his/her home environment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ImproveHome</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">To detect: it&apos;s necessary to have a home, and go to a home improvement store (e.g., IKEA)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ImproveHome</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">improve home</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#LearnLanguage</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">User has learned to speak/read/write in a new language.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LearnLanguage</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">learn language</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#LoseWeight</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">User has lost weight.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LoseWeight</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">lose weight</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#LossOfLovedOne</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">User has lost someone dear to him.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LossOfLovedOne</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">lose loved_one</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#MarryPerson</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">User has married.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MarryPerson</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Can be detected through the following inference: person is at religious facility for longer than usual. Presence of many friends can also suggest this.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MarryPerson</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">marry person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MoveHome</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">move home</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#NewChild</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">User has had a child.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NewChild</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">have baby</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#NewFamilyMember</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">User has a new family member.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NewFamilyMember</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">New Family Member</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#OvercomeIllness</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">User has overcome an illness.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OvercomeIllness</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">overcome illness</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#PickUpSport</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">User has started playing a new sport.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PickUpSport</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">pick_up sport</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#PublishWork</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">User has published a publication.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PublishWork</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">publish work</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#RegisterOrganDonor</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">User has registered as an organ donor.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RegisterOrganDonor</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">register organ_donor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#RegisterVoter</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">User has registered to vote.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RegisterVoter</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">register voter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#RemoveBraces</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">User has removed his/her braces.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RemoveBraces</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">remove braces</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#RepairVision</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">User has acquired glasses, contact lenses, or has undergone surgery.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RepairVision</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Can be detected if person is at ophthalmologist.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RepairVision</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">repair vision</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#StudyAbroad</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">User has studied (or is currently studying) abroad.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#StudyAbroad</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">study abroad</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TimeDuration</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Time Duration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TimeOfDay</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Time of Day</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#VolunteerWork</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">User has done volunteer work.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#VolunteerWork</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">volunteer work</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#WinAward</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">User has won an achievement, or an award.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#WinAward</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">win award</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasActivity</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">has activity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasLocation</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">has location</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasTimeDuration</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">has time duration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasTimeOfDay</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">has time of day</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#possibleWhile</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Activity is possible while user is in certain position, or has certain movement.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#possibleWhile</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">possible while</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#ATM</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">atm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#Accounting</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">accounting</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#Airport</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">airport</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#AmusementPark</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">amusement_park</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#Aquarium</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">aquarium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#ArtGallery</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">art_gallery</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#Bakery</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">bakery</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#Bank</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">bank</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#Bar</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">bar</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#BeautySalon</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">beauty_salon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#BicycleStore</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">bicycle_store</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#BookStore</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">book_store</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#BowlingAlley</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">bowling_alley</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#BusStation</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">bus_station</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#Cafe</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">cafe</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#Campground</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">campground</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#CarDealer</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">car_dealer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#CarRental</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">car_rental</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#CarRepair</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">car_repair</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#CarWash</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">car_wash</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#Casino</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">casino</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#Cemetery</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">cemetery</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#Church</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">church</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#CityHall</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">city_hall</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#ClothingStore</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">clothing_store</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#ConvenienceStore</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">convenience_store</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#Courthouse</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">courthouse</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#Dentist</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">dentist</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#DepartmentStore</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">department_store</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#Doctor</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">doctor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#Electrician</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">electrician</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#ElectronicsStore</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">electronics_store</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#Embassy</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">embassy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#Establishment</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">establishment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#Finance</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">finance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#FireStation</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">fire_station</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#Florist</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">florist</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#Food</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">food</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#FuneralHome</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">funeral_home</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#FurnitureStore</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">furniture_store</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#GasStation</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">gas_station</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#GeneralContractor</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">general_contractor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#GroceryOrSupermarket</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">grocery_or_supermarket</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#Gym</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">gym</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#HairCare</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">hair_care</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#HardwareStore</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">hardware_store</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#Health</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">health</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#HinduTemple</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">hindu_temple</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#HomeGoodsStore</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">home_goods_store</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#Hospital</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">hospital</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#InsuranceAgency</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">insurance_agency</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#JewelryStore</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">jewelry_store</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#Laundry</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">laundry</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#Lawyer</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">lawyer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#Library</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">library</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#LiquourStore</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">liquor_store</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#LocalGovernmentOffice</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">local_government_office</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#Locksmith</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">locksmith</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#Lodging</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">lodging</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#MealDelivery</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">meal_delivery</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#MealTakeaway</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">meal_takeaway</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#Mosque</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">mosque</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#MovieRental</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">movie_rental</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#MovieTheater</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">movie_theater</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#MovingCompany</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">moving_company</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#Museum</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">museum</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#NightClub</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">night_club</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#Painter</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">painter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#Park</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">park</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#Parking</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">parking</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#PetStore</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">pet_store</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#Pharmacy</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">pharmacy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#Physiotherapist</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">physiotherapist</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#PlaceOfWorship</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">place_of_worship</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#Plumber</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">plumber</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#Police</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">police</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#PostOffice</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">post_office</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#RVPark</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">rv_park</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#RealEstateAgency</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">real_estate_agency</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#Restaurant</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">restaurant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#RoofingContractor</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">roofing_contractor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#School</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">school</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#ShoeStore</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">shoe_store</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#ShoppingMall</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">shopping_mall</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#Spa</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">spa</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#Stadium</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">stadium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#Storage</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">storage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#Store</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">store</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#SubwayStation</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">subway_station</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#Synagogue</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">synagogue</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#TaxiStand</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">taxi_stand</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#TrainStation</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">train_station</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#TravelAgency</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">travel_agency</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#University</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">university</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#VeterinaryCare</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">veterinary_care</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mem0r1es.github.io/ontology/places#Zoo</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">zoo</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
+
+

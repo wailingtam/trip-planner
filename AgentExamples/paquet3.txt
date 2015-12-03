@@ -1,0 +1,471 @@
+{
+    "Activities": {
+        "Dia 9": {
+            "Torn nit": {
+                "Website": "http://www.delyan.fr/delyan-hotel-de-ville.html", 
+                "Phone": "01 42 78 35 59", 
+                "Rating": "3.8", 
+                "Name": "Delyan", 
+                "Address": "8 Rue Saint-Martin, 75004 Paris, France"
+            }, 
+            "Torn mati": {
+                "Website": "http://www.dorchestercollection.com/en/paris/le-meurice", 
+                "Phone": "01 44 58 10 10", 
+                "Rating": "4.5", 
+                "Name": "Le Meurice Hotel Paris", 
+                "Address": "228 Rue de Rivoli, 75001 Paris, France"
+            }, 
+            "Torn tarda": {
+                "Website": "http://www.starbucks.fr/", 
+                "Phone": "01 40 20 08 37", 
+                "Rating": "3.7", 
+                "Name": "Starbucks", 
+                "Address": "26 Avenue de l'Op\u00e9ra, 75001 Paris, France"
+            }
+        }, 
+        "Dia 8": {
+            "Torn nit": {
+                "Website": "http://www.saintjamesalbany.com/", 
+                "Phone": "01 44 58 43 21", 
+                "Rating": "3.7", 
+                "Name": "Saint James Albany Hotel Spa Paris", 
+                "Address": "202 Rue de Rivoli, 75001 Paris, France"
+            }, 
+            "Torn mati": {
+                "Website": "http://www.closeriedeslilas.fr/", 
+                "Phone": "01 40 51 34 50", 
+                "Rating": "3.9", 
+                "Name": "La Closerie Des Lilas", 
+                "Address": "171 Boulevard du Montparnasse, 75006 Paris, France"
+            }, 
+            "Torn tarda": {
+                "Website": "http://www.cafe-philo-des-phares.info/index.php?option=com_frontpage&Itemid=1", 
+                "Phone": "01 42 72 04 70", 
+                "Rating": "3.6", 
+                "Name": "Caf\u00e9 des Phares", 
+                "Address": "7 Place de la Bastille, 75004 Paris, France"
+            }
+        }, 
+        "Dia 3": {
+            "Torn nit": {
+                "Website": "http://www.labrasserie-isl.fr/", 
+                "Phone": "01 43 54 02 59", 
+                "Rating": "3.2", 
+                "Name": "La Brasserie de L'Isle Saint-Louis", 
+                "Address": "55 Quai de Bourbon, 75004 Paris, France"
+            }, 
+            "Torn mati": {
+                "Website": "http://ozorestaurant.fr/", 
+                "Phone": "01 42 77 10 03", 
+                "Rating": "4.1", 
+                "Name": "OZO", 
+                "Address": "37 Rue Quincampoix, 75004 Paris, France"
+            }, 
+            "Torn tarda": {
+                "Website": "None", 
+                "Phone": "01 40 51 52 80", 
+                "Rating": "3.3", 
+                "Name": "Chez Castel", 
+                "Address": "15 Rue Princesse, 75006 Paris, France"
+            }
+        }, 
+        "Dia 2": {
+            "Torn nit": {
+                "Website": "None", 
+                "Phone": "01 48 87 24 20", 
+                "Rating": "4", 
+                "Name": "B D J Caf\u00e9", 
+                "Address": "5 Rue de Jarente, 75004 Paris, France"
+            }, 
+            "Torn mati": {
+                "Website": "http://favelachic.com/", 
+                "Phone": "01 40 21 38 14", 
+                "Rating": "3.4", 
+                "Name": "Favela Chic", 
+                "Address": "18 Rue du Faubourg du Temple, 75011 Paris, France"
+            }, 
+            "Torn tarda": {
+                "Website": "http://www.carilis.fr/", 
+                "Phone": "01 55 42 77 88", 
+                "Rating": "4", 
+                "Name": "Espace sportif Pontoise", 
+                "Address": "19 Rue de Pontoise, 75005 Paris, France"
+            }
+        }, 
+        "Dia 1": {
+            "Torn nit": {
+                "Website": "http://www.cafetournon.com/", 
+                "Phone": "01 43 26 16 16", 
+                "Rating": "4.2", 
+                "Name": "Comptoir Tournon", 
+                "Address": "18 Rue de Tournon, 75006 Paris, France"
+            }, 
+            "Torn mati": {
+                "Website": "None", 
+                "Phone": "01 44 54 54 17", 
+                "Rating": "3.1", 
+                "Name": "Le Sun City", 
+                "Address": "62 Boulevard de S\u00e9bastopol, 75003 Paris, France"
+            }, 
+            "Torn tarda": {
+                "Website": "http://www.sncf.com/fr/trains/intercites/lignes-jour/paris-saint-lazare-rouen-le-havre", 
+                "Phone": "01 47 42 54 16", 
+                "Rating": "", 
+                "Name": "Le Gaillon", 
+                "Address": "2 Rue de la Michodi\u00e8re, 75002 Paris, France"
+            }
+        }, 
+        "Dia 7": {
+            "Torn nit": {
+                "Website": "http://www.vallois.com/", 
+                "Phone": "01 43 25 17 34", 
+                "Rating": "", 
+                "Name": "Galerie Vallois", 
+                "Address": "41 Rue de Seine, 75006 Paris, France"
+            }, 
+            "Torn mati": {
+                "Website": "http://silencio-club.com/fr", 
+                "Phone": "01 40 13 12 33", 
+                "Rating": "3.8", 
+                "Name": "Silencio", 
+                "Address": "142 Rue Montmartre, 75002 Paris, France"
+            }, 
+            "Torn tarda": {
+                "Website": "http://www.duo-paris.com/", 
+                "Phone": "01 42 72 72 22", 
+                "Rating": "4.1", 
+                "Name": "H\u00f4tel Duo", 
+                "Address": "11 Rue du Temple, 75004 Paris, France"
+            }
+        }, 
+        "Dia 6": {
+            "Torn nit": {
+                "Website": "None", 
+                "Phone": "01 42 72 13 44", 
+                "Rating": "3.1", 
+                "Name": "La Tour Du Temple", 
+                "Address": "160 Rue du Temple, 75003 Paris, France"
+            }, 
+            "Torn mati": {
+                "Website": "http://www.lesbainsdumarais.fr/", 
+                "Phone": "01 44 61 02 02", 
+                "Rating": "3.6", 
+                "Name": "Les Bains du Marais", 
+                "Address": "31-33 Rue des Blancs Manteaux, 75004 Paris, France"
+            }, 
+            "Torn tarda": {
+                "Website": "http://www.rotondemontparnasse.com", 
+                "Phone": "01 43 26 48 26", 
+                "Rating": "4.1", 
+                "Name": "La Rotonde", 
+                "Address": "105 Boulevard du Montparnasse, 75006 Paris, France"
+            }
+        }, 
+        "Dia 5": {
+            "Torn nit": {
+                "Website": "None", 
+                "Phone": "01 45 48 96 96", 
+                "Rating": "3.7", 
+                "Name": "Le Flor\u00e8s", 
+                "Address": "80 Rue de Grenelle, 75007 Paris, France"
+            }, 
+            "Torn mati": {
+                "Website": "http://www.59rivoli.org/main.html", 
+                "Phone": "01 44 61 08 31", 
+                "Rating": "4.8", 
+                "Name": "Squat 59 Rivoli", 
+                "Address": "59 Rue de Rivoli, 75001 Paris, France"
+            }, 
+            "Torn tarda": {
+                "Website": "http://www.starbucks.fr/", 
+                "Phone": "01 47 70 39 80", 
+                "Rating": "4.1", 
+                "Name": "Starbucks", 
+                "Address": "18 Boulevard Montmartre, 75009 Paris, France"
+            }
+        }, 
+        "Dia 4": {
+            "Torn nit": {
+                "Website": "http://www.musee-en-herbe.com/", 
+                "Phone": "01 40 67 97 66", 
+                "Rating": "3.8", 
+                "Name": "Mus\u00e9e en Herbe", 
+                "Address": "21 Rue H\u00e9rold, 75001 Paris, France"
+            }, 
+            "Torn mati": {
+                "Website": "http://www.barramundi.fr/", 
+                "Phone": "01 47 70 21 21", 
+                "Rating": "3.2", 
+                "Name": "Barramundi", 
+                "Address": "3 Rue Taitbout, 75009 Paris, France"
+            }, 
+            "Torn tarda": {
+                "Website": "http://www.cafedeflore.fr/", 
+                "Phone": "01 45 48 55 26", 
+                "Rating": "3.7", 
+                "Name": "Caf\u00e9 de Flore", 
+                "Address": "172 boulevard saint germain, 75006 Paris, France"
+            }
+        }, 
+        "Dia 19": {
+            "Torn nit": {
+                "Website": "http://www.aux-folies-belleville.fr/", 
+                "Phone": "06 14 17 91 33", 
+                "Rating": "3.9", 
+                "Name": "Aux Folies", 
+                "Address": "8 Rue de Belleville, 75020 Paris, France"
+            }, 
+            "Torn mati": {
+                "Website": "http://www.don-camilo.com/", 
+                "Phone": "01 42 60 82 84", 
+                "Rating": "3.9", 
+                "Name": "DON CAMILO", 
+                "Address": "10 Rue des Saints-P\u00e8res, 75007 Paris, France"
+            }, 
+            "Torn tarda": {
+                "Website": "http://www.carrouseldulouvre.com/W/do/centre/accueil", 
+                "Phone": "01 43 16 47 10", 
+                "Rating": "4.3", 
+                "Name": "Carrousel du Louvre", 
+                "Address": "99 Rue de Rivoli, 75001 Paris, France"
+            }
+        }, 
+        "Dia 18": {
+            "Torn nit": {
+                "Website": "http://www.lezimmer.com/", 
+                "Phone": "01 42 36 74 03", 
+                "Rating": "3.6", 
+                "Name": "Le Zimmer", 
+                "Address": "1 Place du Ch\u00e2telet, 75001 Paris, France"
+            }, 
+            "Torn mati": {
+                "Website": "http://limonaire.free.fr/", 
+                "Phone": "01 45 23 33 33", 
+                "Rating": "4", 
+                "Name": "Le Limonaire", 
+                "Address": "18 Cit\u00e9 Berg\u00e8re, 75009 Paris, France"
+            }, 
+            "Torn tarda": {
+                "Website": "http://www.atlantide-sauna.com/", 
+                "Phone": "01 43 42 22 43", 
+                "Rating": "3.4", 
+                "Name": "Atlantide Sauna", 
+                "Address": "13 Rue Parrot, 75012 Paris, France"
+            }
+        }, 
+        "Dia 13": {
+            "Torn nit": {
+                "Website": "http://www.hardrock.com/locations/cafes3/cafe.aspx?LocationID=92&MIBEnumID=3", 
+                "Phone": "01 53 24 60 00", 
+                "Rating": "4", 
+                "Name": "Hard Rock Cafe Paris", 
+                "Address": "14 Boulevard Montmartre, 75009 Paris, France"
+            }, 
+            "Torn mati": {
+                "Website": "http://www.restaurant-preauxclercs.com/", 
+                "Phone": "01 43 54 41 73", 
+                "Rating": "3.8", 
+                "Name": "Le Pr\u00e9 aux Clercs", 
+                "Address": "30 Rue Bonaparte, 75006 Paris, France"
+            }, 
+            "Torn tarda": {
+                "Website": "http://www.parisleshalles.fr/", 
+                "Phone": "01 40 26 49 19", 
+                "Rating": "3.5", 
+                "Name": "Le Paris Halles", 
+                "Address": "41 Boulevard de S\u00e9bastopol, 75001 Paris, France"
+            }
+        }, 
+        "Dia 12": {
+            "Torn nit": {
+                "Website": "http://www.opencafe.fr/", 
+                "Phone": "None", 
+                "Rating": "3.6", 
+                "Name": "OPEN Caf\u00e9", 
+                "Address": "17 Rue des Archives, 75004 Paris, France"
+            }, 
+            "Torn mati": {
+                "Website": "http://www.edenparkpub.com/", 
+                "Phone": "01 43 26 02 96", 
+                "Rating": "4.2", 
+                "Name": "EDEN PARK PUB", 
+                "Address": "10 Rue Princesse, 75006 Paris, France"
+            }, 
+            "Torn tarda": {
+                "Website": "http://www.massimomori.net/", 
+                "Phone": "01 45 48 62 15", 
+                "Rating": "3.8", 
+                "Name": "Emporio Armani Caff\u00e9", 
+                "Address": "149 Boulevard Saint-Germain, 75006 Paris, France"
+            }
+        }, 
+        "Dia 11": {
+            "Torn nit": {
+                "Website": "http://www.lesbains-paris.com/", 
+                "Phone": "01 42 77 07 07", 
+                "Rating": "3.4", 
+                "Name": "Les Bains Paris", 
+                "Address": "7 Rue du Bourg l'Abb\u00e9, 75003 Paris, France"
+            }, 
+            "Torn mati": {
+                "Website": "http://www.kamelmennour.com/", 
+                "Phone": "01 56 24 03 63", 
+                "Rating": "", 
+                "Name": "Galerie Kamel Mennour", 
+                "Address": "47 Rue Saint-Andr\u00e9 des Arts, 75006 Paris, France"
+            }, 
+            "Torn tarda": {
+                "Website": "http://www.cafedelindustrieparis.fr/", 
+                "Phone": "01 47 00 13 53", 
+                "Rating": "3.9", 
+                "Name": "Caf\u00e9 de l'Industrie", 
+                "Address": "16 Rue Saint-Sabin, 75011 Paris, France"
+            }
+        }, 
+        "Dia 10": {
+            "Torn nit": {
+                "Website": "http://www.cafe-sthonore.com/", 
+                "Phone": "01 42 61 49 31", 
+                "Rating": "4.2", 
+                "Name": "Caf\u00e9 Saint honor\u00e9", 
+                "Address": "194 Rue Saint Honor\u00e9, 75001 Paris, France"
+            }, 
+            "Torn mati": {
+                "Website": "http://www.beaumarly.com/cafe-beaubourg/accueil", 
+                "Phone": "01 48 87 63 96", 
+                "Rating": "3.6", 
+                "Name": "Caf\u00e9 Beaubourg", 
+                "Address": "100 Rue Saint-Martin, 75004 Paris, France"
+            }, 
+            "Torn tarda": {
+                "Website": "http://www.cafedesbeauxarts.fr/", 
+                "Phone": "01 43 54 08 55", 
+                "Rating": "3.6", 
+                "Name": "Caf\u00e9 des Beaux Arts", 
+                "Address": "7 Quai Malaquais, 75006 Paris, France"
+            }
+        }, 
+        "Dia 17": {
+            "Torn nit": {
+                "Website": "http://www.lataverneducroissant.fr/", 
+                "Phone": "01 42 33 35 04", 
+                "Rating": "2.7", 
+                "Name": "La Taverne du croissant", 
+                "Address": "146 Rue Montmartre, 75002 Paris, France"
+            }, 
+            "Torn mati": {
+                "Website": "http://www.gaite-lyrique.net/", 
+                "Phone": "01 53 01 52 00", 
+                "Rating": "4.4", 
+                "Name": "La Ga\u00eet\u00e9 Lyrique", 
+                "Address": "3bis Rue Papin, 75003 Paris, France"
+            }, 
+            "Torn tarda": {
+                "Website": "http://www.cafecassette.com", 
+                "Phone": "01 45 48 53 78", 
+                "Rating": "3.6", 
+                "Name": "Caf\u00e9 Cassette", 
+                "Address": "73 Rue de Rennes, 75006 Paris, France"
+            }
+        }, 
+        "Dia 16": {
+            "Torn nit": {
+                "Website": "http://www.spa-renaissance-paris-vendome.com/", 
+                "Phone": "01 40 20 72 17", 
+                "Rating": "", 
+                "Name": "Spa de l'H\u00f4tel Renaissance Vend\u00f4me", 
+                "Address": "4 Rue du Mont Thabor, 75001 Paris, France"
+            }, 
+            "Torn mati": {
+                "Website": "http://www.gibus.fr/", 
+                "Phone": "01 82 09 95 32", 
+                "Rating": "3.4", 
+                "Name": "Gibus Paris", 
+                "Address": "18 Rue du Faubourg du Temple, 75011 Paris, France"
+            }, 
+            "Torn tarda": {
+                "Website": "http://www.lempire-paris.com/", 
+                "Phone": "01 40 15 06 06", 
+                "Rating": "3.5", 
+                "Name": "L'Empire Paris", 
+                "Address": "48 Rue de l'Arbre Sec, 75001 Paris, France"
+            }
+        }, 
+        "Dia 15": {
+            "Torn nit": {
+                "Website": "http://www.cafestvictor.com/", 
+                "Phone": "01 43 54 30 50", 
+                "Rating": "3.7", 
+                "Name": "Caf\u00e9 Saint-Victor", 
+                "Address": "11 Rue Monge, 75005 Paris, France"
+            }, 
+            "Torn mati": {
+                "Website": "http://www.cafe-oz.com/", 
+                "Phone": "01 40 39 00 18", 
+                "Rating": "3.4", 
+                "Name": "Caf\u00e9 Oz Ch\u00e2telet", 
+                "Address": "18 Rue Saint-Denis, 75001 Paris, France"
+            }, 
+            "Torn tarda": {
+                "Website": "http://www.cafelapaletteparis.com/", 
+                "Phone": "01 43 26 68 15", 
+                "Rating": "3.7", 
+                "Name": "La Palette", 
+                "Address": "43 Rue de Seine, 75006 Paris, France"
+            }
+        }, 
+        "Dia 14": {
+            "Torn nit": {
+                "Website": "http://www.patrickseguin.com/", 
+                "Phone": "01 47 00 32 35", 
+                "Rating": "", 
+                "Name": "Galerie Patrick Seguin", 
+                "Address": "5 Rue des Taillandiers, 75011 Paris, France"
+            }, 
+            "Torn mati": {
+                "Website": "http://www.cubanacafe.com/", 
+                "Phone": "01 40 46 80 81", 
+                "Rating": "3.5", 
+                "Name": "Cubana Caf\u00e9 ( Bar de Nuit, Restaurant Cubain, Fumoir Paris, Brunch Paris )", 
+                "Address": "47 Rue Vavin, 75006 Paris, France"
+            }, 
+            "Torn tarda": {
+                "Website": "http://www.rexclub.com/", 
+                "Phone": "01 42 36 10 96", 
+                "Rating": "4", 
+                "Name": "Rex Club", 
+                "Address": "5 Boulevard Poissonni\u00e8re, 75002 Paris, France"
+            }
+        }
+    }, 
+    "Hotel": {
+        "Rating": "4.0", 
+        "Rate per night": "246.47USD", 
+        "Name": "Little Palace Hotel", 
+        "Total rate": "5305.77USD", 
+        "Distance to city center": "1.1280257KM", 
+        "Address": "4 Rue Salomon De Caus", 
+        "Description": "&lt;p&gt;&lt;b&gt;Property Location&lt;/b&gt; &lt;br /&gt;A stay at Little Palace Hotel places you in the heart of Paris, walking distance from Porte Saint-Martin and Arts et Metiers Museum. This 4-star hotel is close to"
+    }, 
+    "Transport": {
+        "Preu total": "1077.56EUR", 
+        "Return flight": {
+            "Origin": "CDG", 
+            "Flight number": "3348", 
+            "Destination": "BCN", 
+            "Carrier": "UX", 
+            "Arrival time": "2015-09-18T22:40+02:00", 
+            "Duration": "100min", 
+            "Departure time": "2015-09-18T21:00+02:00"
+        }, 
+        "Departure flight": {
+            "Origin": "BCN", 
+            "Flight number": "3249", 
+            "Destination": "CDG", 
+            "Carrier": "UX", 
+            "Arrival time": "2015-08-30T08:40+02:00", 
+            "Duration": "115min", 
+            "Departure time": "2015-08-30T06:45+02:00"
+        }
+    }
+}

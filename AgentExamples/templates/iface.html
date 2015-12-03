@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Vacances</title>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+</head>
+<style>
+    h1 {
+        text-align: center;
+        color: white;
+    }
+    html {
+        /*background-image: url("http://www.barcelonacomedyfestival.com/uploads/1/1/0/5/11055535/8950828.png");
+        /*"http://www.joug.net/images/full/2014/11/29/exotic-holiday-beach-hd-wallpaper-Exotic-Holiday-Beach-Hd-Wallpaper.jpg");
+
+        background-size: auto;
+        background-repeat: no-repeat;*/
+        background: url("http://www.barcelonacomedyfestival.com/uploads/1/1/0/5/11055535/8950828.png") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    form{
+        background: rgba(0,0,0,0.7);
+        padding: 50px;
+        border-radius: 35px 35px 35px 35px;
+        -moz-border-radius: 35px 35px 35px 35px;
+        -webkit-border-radius: 35px 35px 35px 35px;
+    }
+    label {
+        color: white;
+    }
+    table {
+        width: 100%;
+    }
+    .container{
+        background: rgba(0,0,0,0) ;
+    }
+
+</style>
+<body class="container">
+    <h1>Vacances</h1>
+    &nbsp;
+    <form method="post" action="" class="form-horizontal">
+       <div class="form-group">
+           <label class="col-sm-2 control-label">Origin:</label>
+           <div class="col-sm-10">
+               <input placeholder="GVA" class="form-control" type="text" name="origin" required>
+           </div>
+       </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Destination:</label>
+            <div class="col-sm-10">
+                <!--<input placeholder="BCN" class="form-control" type="text" name="destination" required>-->
+                <input type="radio" name="destination" value="BCN" checked>&nbsp;<label>BCN</label>
+                &nbsp;
+                <input type="radio" name="destination" value="MAD" checked>&nbsp;<label>MAD</label>
+                &nbsp;
+                <input type="radio" name="destination" value="CDG" checked>&nbsp;<label>CDG</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">DepartureDate:</label>
+            <div class="col-sm-10">
+                <input placeholder="06/10/2015" class="form-control" type="text" name="departureDate" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">ReturnDate:</label>
+            <div class="col-sm-10">
+                <input placeholder="06/10/2015" class="form-control" type="text" name="returnDate" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">NumAdults:</label>
+            <div class="col-sm-10">
+                <input placeholder="2"class="form-control" type="text" name="numAdults" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">NumChildren:</label>
+            <div class="col-sm-10">
+                <input placeholder="2"class="form-control" type="text" name="numChildren" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">PreferredCabin:</label>
+            <div class="col-sm-10">
+                <!--<input placeholder="COUCH" class="form-control" type="text" name="preferredCabin" required>-->
+                <input type="radio" name="preferredCabin" value="COACH" checked>&nbsp;<label>COACH</label>
+                &nbsp;
+                <input type="radio" name="preferredCabin" value="PREMIUM_COACH" checked>&nbsp;<label>PREMIUM COACH</label>
+                &nbsp;
+                <input type="radio" name="preferredCabin" value="BUSINESS" checked>&nbsp;<label>BUSINESS</label>
+                &nbsp;
+                <input type="radio" name="preferredCabin" value="FIRST" checked>&nbsp;<label>FIRST</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">FlightMaxPrice:</label>
+            <div class="col-sm-10">
+                <input placeholder="2000" class="form-control" type="text" name="flightMaxPrice" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Centric:</label>
+            <div class="col-sm-10">
+                <!--<input placeholder="True" class="form-control" type="text" name="centric" required>-->
+                <input type="radio" name="centric" value="True" checked>&nbsp;<label>Yes</label>
+                &nbsp;
+                <input type="radio" name="centric" value="False" checked>&nbsp;<label>No</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Category:</label>
+            <div class="col-sm-10">
+                <!--<input placeholder="1" class="form-control" type="text" name="category" required>-->
+                <input type="radio" name="category" value="1" checked> <label>Hotel</label>
+                &nbsp;
+                <input type="radio" name="category" value="4" checked><label>Vacational rental / condo</label>
+                &nbsp;
+                <input type="radio" name="category" value="5" checked><label>Breakfast</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">MinStars:</label>
+            <div class="col-sm-10">
+                <input placeholder="4.0"class="form-control" type="text" name="minStars" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Activities:</label>
+            <div class="col-sm-10">
+                <table>
+                    <tbody>
+                    <tr>
+                        <td>
+                           <input type="checkbox" name="activities" value="amusement_park">&nbsp;<label>Amusement Park</label>
+                        </td>
+                        <td>
+                           <input type="checkbox" name="activities" value="aquarium">&nbsp;<label>Aquarium</label>
+                        </td>
+                        <td>
+                           <input type="checkbox" name="activities" value="art_gallery">&nbsp;<label>Art Gallery</label>
+                        </td>
+                        <td>
+                           <input type="checkbox" name="activities" value="casino">&nbsp;<label>Casino</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                           <input type="checkbox" name="activities" value="museum">&nbsp;<label>Museum</label>
+                        </td>
+                        <td>
+                           <input type="checkbox" name="activities" value="park">&nbsp;<label>Park</label>
+                        </td>
+                        <td>
+                           <input type="checkbox" name="activities" value="shopping_mall">&nbsp;<label>Shopping Mall</label>
+                        </td>
+                        <td>
+                           <input type="checkbox" name="activities" value="spa">&nbsp;<label>Spa</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                           <input type="checkbox" name="activities" value="stadium">&nbsp;<label>Stadium</label>
+                        </td>
+                        <td>
+                           <input type="checkbox" name="activities" value="zoo">&nbsp;<label>Zoo</label>
+                        </td>
+                        <td>
+                           <input type="checkbox" name="activities" value="bar">&nbsp;<label>Bar</label>
+                        </td>
+                        <td>
+                           <input type="checkbox" name="activities" value="cafe">&nbsp;<label>Cafe</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                           <input type="checkbox" name="activities" value="food">&nbsp;<label>Food</label>
+                        </td>
+                        <td>
+                           <input type="checkbox" name="activities" value="restaurant">&nbsp;<label>Restaurant</label>
+                        </td>
+                        <td>
+                           <input type="checkbox" name="activities" value="church">&nbsp;<label>Church</label>
+                        </td>
+                        <td>
+                           <input type="checkbox" name="activities" value="hindu_temple">&nbsp;<label>Hindu Temple</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                           <input type="checkbox" name="activities" value="place_of_worship">&nbsp;<label>Place of worship</label>
+                        </td>
+                        <td>
+                           <input type="checkbox" name="activities" value="synagogue">&nbsp;<label>Synagogue</label>
+                        </td>
+                        <td>
+                           <input type="checkbox" name="activities" value="night_club">&nbsp;<label>Night Club</label>
+                        </td>
+                    </tr>
+
+                    </tbody>
+                </table>
+                <!--<textarea placeholder="restaurant,cafe,bar,night_club,park,food" class="form-control" name="activities"></textarea>-->
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-success">Envia</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

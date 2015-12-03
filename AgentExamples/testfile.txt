@@ -1,0 +1,14 @@
+{
+	"origin": "MUC",
+	"destination": "BCN",
+	"departureDate": "05/10/2016",
+	"returnDate": "05/31/2016",
+	"numAdults": 3,
+	"numChildren": 1,
+	"preferredCabin": "BUSINESS",
+	"flightMaxPrice": 2225,
+	"centric": "False",
+	"category": 5,
+	"minStars": 3.0,
+	"activities": "park,bar,museum,shopping_mall,restaurant,stadium,food"
+}
